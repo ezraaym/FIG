@@ -5,14 +5,11 @@
 //  Created by E. Haugabrooks on 10/25/24.
 //
 
-import SwiftUI
+import Foundation
 
-struct Story: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Story()
+struct Story: Identifiable {
+    let id = UUID()
+    let user: User
+    var hasSeen: Bool = false
+    var isMyStory: Bool = false
 }

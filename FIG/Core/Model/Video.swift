@@ -5,14 +5,14 @@
 //  Created by E. Haugabrooks on 10/25/24.
 //
 
-import SwiftUI
+import Foundation
+import AVFoundation
 
-struct Video: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Video()
+struct Video : Identifiable {
+    var id = UUID()
+    var player : AVPlayer
+    var likes: String
+    var comments: String
+    var caption: String
+    var user: User
 }

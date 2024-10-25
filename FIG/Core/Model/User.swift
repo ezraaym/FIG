@@ -5,14 +5,10 @@
 //  Created by E. Haugabrooks on 10/25/24.
 //
 
-import SwiftUI
+import Foundation
 
-struct User: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    User()
+struct User: Identifiable {
+    var id = UUID()
+    let userName: String
+    let userImage: String
 }
